@@ -1,1 +1,109 @@
+:root {
+  --pill-page-background: #403b2f;
+  --pill-text: rgba(255, 255, 255, 0.92);
+  --pill-border: rgba(255, 255, 255, 0.42);
+  --pill-background: rgba(255, 255, 255, 0.02);
+  --pill-hover-background: rgba(255, 255, 255, 0.08);
+  --pill-hover-border: rgba(255, 255, 255, 0.62);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--pill-text);
+  background: var(--pill-page-background);
+}
+
+.pill-demo {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 48px 24px;
+}
+
+.pill-section {
+  width: min(720px, 100%);
+  margin: 0 auto;
+}
+
+.pill-section__eyebrow {
+  margin: 0 0 14px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.pill-section__title {
+  max-width: 620px;
+  margin: 0 0 30px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.08;
+  font-weight: 400;
+}
+
+.content-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 10px;
+  width: 100%;
+  max-width: 560px;
+}
+
+.content-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 10px 22px 9px;
+  border: 1px solid var(--pill-border);
+  border-radius: 999px;
+  background: var(--pill-background);
+  color: var(--pill-text);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-transform: lowercase;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.content-pill:hover {
+  background: var(--pill-hover-background);
+  border-color: var(--pill-hover-border);
+}
+
+@media screen and (max-width: 767px) {
+  .pill-demo {
+    padding: 36px 18px;
+  }
+
+  .content-pills {
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .content-pill {
+    min-height: 36px;
+    padding: 9px 16px 8px;
+    font-size: 0.8125rem;
+    line-height: 1.2;
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content-pill {
+    transition: none;
+  }
+}
 
