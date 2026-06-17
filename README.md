@@ -56,6 +56,17 @@ View files:
 * `gallery-navigation-text-labels/README.md`
 ```
 
+```markdown
+### Navigation Link CTA Button
+
+A CSS-only Squarespace navigation enhancement that transforms a selected desktop and mobile menu link into a branded CTA button while keeping it within the normal navigation order.
+
+View files:
+
+* `navigation-link-cta-button/styles.css`
+* `navigation-link-cta-button/README.md`
+```
+
 
 ## Notes
 
