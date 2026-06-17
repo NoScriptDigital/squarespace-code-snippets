@@ -1,1 +1,44 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const redirects = [
+      { old: "/programs-hub", new: "/programs" },
+      { old: "/about-hub", new: "/about" }
+    ];
+
+    redirects.forEach(function (item) {
+      const candidates = document.querySelectorAll(
+        "a[href='" + item.old + "'], " +
+        "a[data-href='" + item.old + "'], " +
+        ".header-nav-folder-title[data-href='" + item.old + "']"
+      );
+
+      candidates.forEach(function (el) {
+        el.addEventListener("click", function (event) {
+          event.preventDefault();
+          window.location.href = item.new;
+        });
+      });
+    });
+
+    const revealItems = document.querySelectorAll(".reveal-card");
+
+    if (revealItems.length) {
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      revealItems.forEach(function (item) {
+        observer.observe(item);
+      });
+    }
+  });
+</script>
 
