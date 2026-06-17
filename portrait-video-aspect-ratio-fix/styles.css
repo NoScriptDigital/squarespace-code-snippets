@@ -1,1 +1,23 @@
+/*
+ * Squarespace Portrait Video Aspect Ratio Fix
+ *
+ * Restores a portrait video to its original 9:16 presentation
+ * inside the native Squarespace Video Block.
+ */
 
+.video-block .plyr,
+.video-block .plyr__video-wrapper,
+.video-block video {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 9 / 16 !important;
+}
+
+.video-block .plyr__video-wrapper {
+  background: transparent !important;
+}
+
+.video-block video {
+  display: block;
+  object-fit: contain !important;
+}
