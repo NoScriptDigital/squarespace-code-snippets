@@ -89,6 +89,15 @@ View files:
 * `linked-logo-marquee/styles.css`
 * `linked-logo-marquee/README.md`
 
+### Portrait Video Aspect Ratio Fix
+
+A CSS-only solution that restores phone-recorded portrait videos to their original 9:16 display inside the native Squarespace Video Block, avoiding an undersized landscape-style player and unnecessary side bands.
+
+View files:
+
+* `portrait-video-aspect-ratio-fix/styles.css`
+* `portrait-video-aspect-ratio-fix/README.md`
+
 ### VideoObject Schema
 
 A reusable JSON-LD snippet that describes an embedded Squarespace video with its title, description, thumbnail, upload date, and embed URL.
