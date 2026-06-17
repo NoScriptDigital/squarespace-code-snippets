@@ -67,6 +67,16 @@ View files:
 * `navigation-link-cta-button/README.md`
 ```
 
+### Linked Logo Marquee
+
+A responsive HTML and CSS marquee that displays clickable publication, press, partner, or client logos in a seamless scrolling strip. It extends Squarespace beyond its built-in text-only scrolling options.
+
+View files:
+
+* `linked-logo-marquee/index.html`
+* `linked-logo-marquee/styles.css`
+* `linked-logo-marquee/README.md`
+
 
 ## Notes
 
