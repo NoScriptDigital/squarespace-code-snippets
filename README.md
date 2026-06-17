@@ -45,6 +45,18 @@ View files:
 * `equipment-card-table-grid/styles.css`
 * `equipment-card-table-grid/README.md`
 
+```markdown
+### Gallery Navigation Text Labels
+
+A CSS-only Squarespace gallery enhancement that adds visible “Previous” and “Next” labels to slideshow navigation controls while preserving the built-in arrow icons and applying custom brand colors.
+
+View files:
+
+* `gallery-navigation-text-labels/styles.css`
+* `gallery-navigation-text-labels/README.md`
+```
+
+
 ## Notes
 
 These snippets are generalized examples based on common Squarespace website layout needs.
