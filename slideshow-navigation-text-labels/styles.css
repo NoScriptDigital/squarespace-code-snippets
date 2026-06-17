@@ -1,1 +1,132 @@
+:root {
+  --gallery-control-background: #3f948d;
+  --gallery-control-hover: #2f7670;
+  --gallery-control-text: #ffffff;
+}
 
+/*
+ * Squarespace Gallery Navigation Text Labels
+ *
+ * Adds visible "Previous" and "Next" labels to gallery controls
+ * while preserving the existing Squarespace SVG arrow icons.
+ */
+
+/* Legacy Squarespace gallery control colors */
+.sqs-gallery-controls .previous,
+.sqs-gallery-controls .next {
+  background-color: var(--gallery-control-background) !important;
+}
+
+.sqs-gallery-controls .previous::before,
+.sqs-gallery-controls .next::before {
+  color: var(--gallery-control-text) !important;
+}
+
+/* Shared gallery control layout */
+[class*="gallery"] button[aria-label*="Previous"],
+[class*="gallery"] button[aria-label*="previous"],
+[class*="gallery"] button[aria-label*="Next"],
+[class*="gallery"] button[aria-label*="next"] {
+  width: 128px !important;
+  min-width: 128px !important;
+  height: 52px !important;
+  padding: 0 18px !important;
+  background-color: var(--gallery-control-background) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  opacity: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  overflow: visible !important;
+}
+
+/* Preserve the Squarespace SVG arrow */
+[class*="gallery"] button[aria-label*="Previous"] svg,
+[class*="gallery"] button[aria-label*="previous"] svg,
+[class*="gallery"] button[aria-label*="Next"] svg,
+[class*="gallery"] button[aria-label*="next"] svg {
+  display: inline-block !important;
+  width: 16px !important;
+  height: 16px !important;
+  flex: 0 0 auto !important;
+}
+
+[class*="gallery"] button[aria-label*="Previous"] svg *,
+[class*="gallery"] button[aria-label*="previous"] svg *,
+[class*="gallery"] button[aria-label*="Next"] svg *,
+[class*="gallery"] button[aria-label*="next"] svg * {
+  stroke: var(--gallery-control-text) !important;
+  color: var(--gallery-control-text) !important;
+}
+
+/* Shared text-label styling */
+[class*="gallery"] button[aria-label*="Previous"]::after,
+[class*="gallery"] button[aria-label*="previous"]::after,
+[class*="gallery"] button[aria-label*="Next"]::after,
+[class*="gallery"] button[aria-label*="next"]::after {
+  display: inline-block !important;
+  color: var(--gallery-control-text) !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+}
+
+/* Previous control: arrow first, label second */
+[class*="gallery"] button[aria-label*="Previous"]::after,
+[class*="gallery"] button[aria-label*="previous"]::after {
+  content: "Previous" !important;
+}
+
+/* Next control: label first, arrow second */
+[class*="gallery"] button[aria-label*="Next"],
+[class*="gallery"] button[aria-label*="next"] {
+  flex-direction: row-reverse !important;
+}
+
+[class*="gallery"] button[aria-label*="Next"]::after,
+[class*="gallery"] button[aria-label*="next"]::after {
+  content: "Next" !important;
+}
+
+/* Hover and keyboard focus */
+[class*="gallery"] button[aria-label*="Previous"]:hover,
+[class*="gallery"] button[aria-label*="previous"]:hover,
+[class*="gallery"] button[aria-label*="Next"]:hover,
+[class*="gallery"] button[aria-label*="next"]:hover,
+[class*="gallery"] button[aria-label*="Previous"]:focus-visible,
+[class*="gallery"] button[aria-label*="previous"]:focus-visible,
+[class*="gallery"] button[aria-label*="Next"]:focus-visible,
+[class*="gallery"] button[aria-label*="next"]:focus-visible {
+  background-color: var(--gallery-control-hover) !important;
+}
+
+[class*="gallery"] button:focus-visible {
+  outline: 2px solid var(--gallery-control-text) !important;
+  outline-offset: -5px !important;
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 640px) {
+  [class*="gallery"] button[aria-label*="Previous"],
+  [class*="gallery"] button[aria-label*="previous"],
+  [class*="gallery"] button[aria-label*="Next"],
+  [class*="gallery"] button[aria-label*="next"] {
+    width: 108px !important;
+    min-width: 108px !important;
+    height: 46px !important;
+    padding: 0 12px !important;
+  }
+
+  [class*="gallery"] button[aria-label*="Previous"]::after,
+  [class*="gallery"] button[aria-label*="previous"]::after,
+  [class*="gallery"] button[aria-label*="Next"]::after,
+  [class*="gallery"] button[aria-label*="next"]::after {
+    font-size: 11px !important;
+  }
+}
