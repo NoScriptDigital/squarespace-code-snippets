@@ -35,6 +35,16 @@ View files:
 * `dropdown-navigation-redirect-fix/script.html`
 * `dropdown-navigation-redirect-fix/README.md`
 
+### Responsive Equipment Card Table
+
+A compact category grid that combines card styling with table-like row and column organization. It solves Squarespace spacing, alignment, and responsive layout limitations for smaller repeated content items.
+
+View files:
+
+* `equipment-card-table-grid/index.html`
+* `equipment-card-table-grid/styles.css`
+* `equipment-card-table-grid/README.md`
+
 ## Notes
 
 These snippets are generalized examples based on common Squarespace website layout needs.
