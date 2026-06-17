@@ -98,6 +98,18 @@ View files:
 * `portrait-video-aspect-ratio-fix/styles.css`
 * `portrait-video-aspect-ratio-fix/README.md`
 
+### Responsive Content Pills
+
+A flexible HTML and CSS pill layout that solves Squarespace spacing, wrapping, and alignment limitations when several short content items need to appear as a balanced group.
+
+[View live demo](https://noscriptdigital.github.io/squarespace-code-snippets/responsive-content-pills/)
+
+View files:
+
+- `responsive-content-pills/index.html`
+- `responsive-content-pills/styles.css`
+- `responsive-content-pills/README.md`
+
 ### VideoObject Schema
 
 A reusable JSON-LD snippet that describes an embedded Squarespace video with its title, description, thumbnail, upload date, and embed URL.
