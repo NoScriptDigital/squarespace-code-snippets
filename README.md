@@ -77,6 +77,17 @@ View files:
 * `linked-logo-marquee/styles.css`
 * `linked-logo-marquee/README.md`
 
+```markdown
+### VideoObject Schema
+
+A reusable JSON-LD snippet for describing embedded Squarespace videos with title, description, thumbnail, upload date, and embed URL information.
+
+View files:
+
+* `video-object-schema/video-schema.html`
+* `video-object-schema/README.md`
+```
+
 
 ## Notes
 
