@@ -110,6 +110,18 @@ View files:
 - `responsive-content-pills/styles.css`
 - `responsive-content-pills/README.md`
 
+### Contrasting Pricing Package Cards
+
+A responsive HTML and CSS pricing layout that solves Squarespace padding, hierarchy, alignment, and equal-height limitations when complex package cards need different visual treatments.
+
+[View live demo](https://noscriptdigital.github.io/squarespace-code-snippets/contrasting-pricing-package-cards/)
+
+View files:
+
+* `contrasting-pricing-package-cards/index.html`
+* `contrasting-pricing-package-cards/styles.css`
+* `contrasting-pricing-package-cards/README.md`
+
 ### VideoObject Schema
 
 A reusable JSON-LD snippet that describes an embedded Squarespace video with its title, description, thumbnail, upload date, and embed URL.
