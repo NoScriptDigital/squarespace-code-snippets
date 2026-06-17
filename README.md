@@ -38,3 +38,7 @@ Replace the placeholder images, button links, colors, and copy with your own pro
 
 * `index.html`
 * `styles.css`
+
+## Live Preview
+
+View the demo here: https://noscriptdigital.github.io/nonprofit-donation-card-grid/
