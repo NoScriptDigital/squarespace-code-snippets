@@ -84,3 +84,7 @@ This is a generalized reusable example.
 
 Client-specific company names, copy, URLs, brand styling, and private project details have been removed or replaced.
 
+## Live Preview
+
+View the demo here:  
+https://noscriptdigital.github.io/squarespace-code-snippets/equipment-card-table-grid/
