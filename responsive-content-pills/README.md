@@ -117,3 +117,10 @@ This is a generalized reusable example.
 
 Client-specific names, copy, brand colors, project language, and private implementation details have been removed or replaced.
 
+## Live Preview
+
+View the demo here:
+
+https://noscriptdigital.github.io/squarespace-code-snippets/responsive-content-pills/
+
+
