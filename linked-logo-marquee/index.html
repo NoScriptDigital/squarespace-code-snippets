@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Linked Publication Logo Marquee</title>
+
+  <meta
+    name="description"
+    content="A responsive scrolling logo strip for publications, press mentions, partnerships, and featured-in sections."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="press-demo">
+
+    <section class="logo-marquee-section" aria-labelledby="press-heading">
+
+      <h1 id="press-heading" class="logo-marquee-section__title">
+        Featured in
+      </h1>
+
+      <div class="logo-marquee" aria-label="Publication links">
+        <div class="logo-marquee__track">
+
+          <!-- Primary interactive list -->
+          <ul class="logo-marquee__content" role="list">
+
+            <li>
+              <a
+                href="https://example.com/publication-one"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Read the feature in Publication One"
+              >
+                <img
+                  src="https://placehold.co/220x48?text=Publication+One"
+                  width="220"
+                  height="48"
+                  alt="Publication One"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://example.com/publication-two"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Read the feature in Publication Two"
+              >
+                <img
+                  src="https://placehold.co/240x48?text=Publication+Two"
+                  width="240"
+                  height="48"
+                  alt="Publication Two"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://example.com/publication-three"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Read the feature in Publication Three"
+              >
+                <img
+                  src="https://placehold.co/230x48?text=Publication+Three"
+                  width="230"
+                  height="48"
+                  alt="Publication Three"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://example.com/publication-four"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Read the feature in Publication Four"
+              >
+                <img
+                  src="https://placehold.co/200x48?text=Publication+Four"
+                  width="200"
+                  height="48"
+                  alt="Publication Four"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://example.com/publication-five"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Read the feature in Publication Five"
+              >
+                <img
+                  src="https://placehold.co/210x48?text=Publication+Five"
+                  width="210"
+                  height="48"
+                  alt="Publication Five"
+                >
+              </a>
+            </li>
+
+          </ul>
+
+          <!-- Decorative duplicate for seamless looping -->
+          <ul
+            class="logo-marquee__content"
+            aria-hidden="true"
+            role="presentation"
+          >
+
+            <li>
+              <img
+                src="https://placehold.co/220x48?text=Publication+One"
+                width="220"
+                height="48"
+                alt=""
+              >
+            </li>
+
+            <li>
+              <img
+                src="https://placehold.co/240x48?text=Publication+Two"
+                width="240"
+                height="48"
+                alt=""
+              >
+            </li>
+
+            <li>
+              <img
+                src="https://placehold.co/230x48?text=Publication+Three"
+                width="230"
+                height="48"
+                alt=""
+              >
+            </li>
+
+            <li>
+              <img
+                src="https://placehold.co/200x48?text=Publication+Four"
+                width="200"
+                height="48"
+                alt=""
+              >
+            </li>
+
+            <li>
+              <img
+                src="https://placehold.co/210x48?text=Publication+Five"
+                width="210"
+                height="48"
+                alt=""
+              >
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
