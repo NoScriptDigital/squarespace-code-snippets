@@ -98,6 +98,24 @@ View files:
 * `video-object-schema/video-schema.html`
 * `video-object-schema/README.md`
 
+### Book Schema
+
+A reusable JSON-LD snippet that describes a book, its author, publisher, language, genres, and landing page for search engines.
+
+View files:
+
+- `book-schema/book-schema.html`
+- `book-schema/README.md`
+
+### FAQPage Schema
+
+A reusable JSON-LD snippet that identifies visible frequently asked questions and their official answers on a Squarespace page.
+
+View files:
+
+- `faq-page-schema/faq-schema.html`
+- `faq-page-schema/README.md`
+
 
 ## Notes
 
