@@ -41,5 +41,5 @@ Replace the placeholder images, button links, colors, and copy with your own pro
 
 ## Live Preview
 
-View the demo here: https://noscriptdigital.github.io/nonprofit-donation-card-grid/
+View the demo here: https://noscriptdigital.github.io/squarespace-code-snippets/donation-card-grid/
 
