@@ -1,1 +1,157 @@
+:root {
+  --cs-text: #2e3235;
+  --cs-muted: #6e737a;
+  --cs-border: #d8dde3;
+  --cs-background: #ffffff;
+  --cs-link: #092445;
+  --cs-hover: #f6f7f9;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--cs-text);
+  background: var(--cs-background);
+}
+
+.cs-demo {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 72px 0;
+}
+
+.cs-intro {
+  max-width: 720px;
+  margin-bottom: 56px;
+}
+
+.cs-eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cs-muted);
+}
+
+.cs-intro h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.cs-intro p:last-child {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.cs-what-we-source {
+  width: 100%;
+  color: var(--cs-text);
+}
+
+.cs-section-title {
+  margin: 0 0 18px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.cs-section-copy {
+  max-width: 720px;
+  margin: 0 0 36px;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.cs-table {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 14px;
+  width: 100%;
+}
+
+.cs-cell {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 14px 16px;
+  font-size: 0.875rem;
+  line-height: 1.35;
+  background: var(--cs-background);
+  border: 1px solid var(--cs-border);
+  border-radius: 6px;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.cs-cell:hover {
+  background-color: var(--cs-hover);
+  border-color: #c8ced5;
+}
+
+.cs-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.cs-item svg {
+  flex-shrink: 0;
+  opacity: 0.75;
+}
+
+.cs-note {
+  margin: 20px 0 0;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--cs-muted);
+}
+
+.cs-inline-link {
+  color: var(--cs-link);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cs-inline-link:hover {
+  text-decoration-thickness: 2px;
+}
+
+.cs-inline-link:focus-visible {
+  outline: 2px solid var(--cs-link);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .cs-table {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .cs-demo {
+    width: min(100% - 32px, 1180px);
+    padding: 48px 0;
+  }
+
+  .cs-intro {
+    margin-bottom: 40px;
+  }
+
+  .cs-table {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-cell {
+    min-height: 52px;
+  }
+}
