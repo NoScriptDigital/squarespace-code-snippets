@@ -1,1 +1,124 @@
+:root {
+  --marquee-background: #05070a;
+  --marquee-border: rgba(245, 246, 248, 0.18);
+  --marquee-text: #f5f6f8;
+  --marquee-accent: #35ff5c;
 
+  --marquee-gap: 2.25rem;
+  --marquee-duration: 24s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #05070a;
+}
+
+.marquee-demo {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.text-icon-marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem 0;
+  background: var(--marquee-background);
+  border-top: 1px solid var(--marquee-border);
+  border-bottom: 1px solid var(--marquee-border);
+}
+
+.text-icon-marquee__track {
+  display: flex;
+  width: max-content;
+  animation:
+    text-icon-marquee-scroll
+    var(--marquee-duration)
+    linear
+    infinite;
+  will-change: transform;
+}
+
+.text-icon-marquee__group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: var(--marquee-gap);
+  padding-right: var(--marquee-gap);
+}
+
+.text-icon-marquee__text {
+  color: var(--marquee-text);
+  font-family: "Space Grotesk", Inter, system-ui, sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.text-icon-marquee__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  color: var(--marquee-accent);
+  font-family: Inter, system-ui, sans-serif;
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 500;
+  line-height: 0.7;
+  white-space: nowrap;
+}
+
+.text-icon-marquee:hover .text-icon-marquee__track,
+.text-icon-marquee:focus-within .text-icon-marquee__track {
+  animation-play-state: paused;
+}
+
+@keyframes text-icon-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --marquee-gap: 1.5rem;
+  }
+
+  .text-icon-marquee {
+    padding: 0.85rem 0;
+  }
+
+  .text-icon-marquee__text {
+    font-size: 1.35rem;
+  }
+
+  .text-icon-marquee__icon {
+    font-size: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-icon-marquee {
+    overflow-x: auto;
+  }
+
+  .text-icon-marquee__track {
+    animation: none;
+  }
+
+  .text-icon-marquee__group[aria-hidden="true"] {
+    display: none;
+  }
+}
