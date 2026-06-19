@@ -122,6 +122,18 @@ View files:
 * `contrasting-pricing-package-cards/styles.css`
 * `contrasting-pricing-package-cards/README.md`
 
+### Text and Logo Marquee
+
+A responsive HTML and CSS marquee that combines repeated text phrases with logos, icons, or image separators in a seamless loop, extending Squarespace beyond its built-in scrolling text options.
+
+[View live demo](https://noscriptdigital.github.io/squarespace-code-snippets/text-and-logo-marquee/)
+
+View files:
+
+* `text-and-logo-marquee/index.html`
+* `text-and-logo-marquee/styles.css`
+* `text-and-logo-marquee/README.md`
+
 ### VideoObject Schema
 
 A reusable JSON-LD snippet that describes an embedded Squarespace video with its title, description, thumbnail, upload date, and embed URL.
